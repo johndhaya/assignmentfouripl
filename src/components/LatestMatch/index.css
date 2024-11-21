@@ -1,0 +1,130 @@
+/* Write your CSS here */
+.lm-card-cont {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.lm-head {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+
+.lm-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .lm-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lm-logo-cont {
+    width: 60%;
+  }
+  .lm-details-main {
+    width: 100%;
+  }
+}
+
+.lm-logo-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lm-details-main {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.lm-team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.lm-date,
+.lm-venue,
+.lm-status {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.lm-logo {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .lm-date,
+  .lm-venue,
+  .lm-status {
+    font-size: 18px;
+  }
+  .lm-logo {
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 200px;
+  }
+  .lm-details-info {
+    text-align: right;
+    width: 33%;
+    padding-right: 32px;
+    padding-left: 0px;
+  }
+  .lm-label {
+    font-size: 18px;
+  }
+  .lm-value {
+    font-size: 14px;
+  }
+}
+
+.lm-details-info {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .lm-details-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .match-info-item {
+    width: 43%;
+    border: 0.5 solid #fff9fc;
+    border-radius: 25px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-height: 100px;
+    max-height: 200px;
+  }
+}
+
+.lm-label {
+  font-size: 14px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
+
+.lm-value {
+  font-size: 12px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
